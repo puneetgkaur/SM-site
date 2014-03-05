@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style type="text/css">
+	#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-bottom:2px;
+		padding-top:8px;
+	padding-left:80px;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="header">
+				<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li class="current"><a href="about.html"><span>About</span></a></li>
+			<li><a href="event.html" ><span>Events</span></a></li>
+		        <li ><a href="membership.html"><span>Membership</span></a></li>
+			<li><a href="reach.html"><span>Reach Us</span></a></li>	
+		</ul>
+		<div>
+			<div class="section">
+				<a href="index.html"><img src="images/logo.gif" alt="Logo" /></a>
+				<div>
+                    <big>SPIC MACAY</big><BR><SMALL>Explore the mysticism in your rich cultural tapestry</SMALL>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div>
+			<h2>Contact Us</h2>
+			<p>For any query, email to <b>spicmacay.igit@gmail.com</b><br><br> You may also contact the following for further information :</p>
+
+			<div id="contact">
+			<center>
+			</div>
+		</div>
+	</div>
+	<br><br>
+	<div id="footer">
+		<div>
+			<div>
+				<div id="connect">
+				
+					<a href="http://www.spicmacay.com" target="_blank">Visit www.spicmacay.com</a>
+
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>

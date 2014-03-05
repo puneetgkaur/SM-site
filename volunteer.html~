@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+	#font1
+	{
+	        font-family: 'Tangerine', serif;
+       		 font-size: 80px;
+       		 
+	}
+	#Heading1
+	{
+		padding-left:35%;
+		padding-top:3%;
+	}
+	</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+           
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+ 
+                    var url = $(this).attr("href");
+                    
+                    window.open(url);
+ 
+                    event.preventDefault();
+ 
+                });
+            });
+        </script>
+    <script type="text/javascript" src="s3Slider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+    </script>
+	
+	<style type="text/css">
+    #slider 
+	{
+    width: 600px; /* important to be same as image width */
+    height: 450px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+    }	
+    #sliderContent {
+    width: 600px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+	list-style-type: none;
+	color:#000000;
+    }
+    .sliderImage {
+    float: left;
+    position: relative;
+	display:none;
+	margin:0;
+    }
+    .sliderImage span {
+    width:450px;
+	position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding:0;
+    width: 100%;
+    background-color: #ffffff;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: #fff;
+    display: none;
+    
+    }  
+    .clear {
+	clear: both;
+    }
+    .sliderImage span strong{
+	width:450px;
+    font-size: 16px;
+    color:#000000;
+    }
+    .top {
+	top:20px;
+	left:20px;
+    }
+    .bottom {
+	bottom: 5px;
+    left: 20px;
+    }
+		#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-left:80%;
+		padding-top:1px;
+
+	}
+	
+	</style>
+</head>
+<body>
+        <div id="Heading1">
+               <span id="font1">	        Spic Macay       </span>
+	        </div>
+	<div id="header">
+	        
+		<ul>
+			
+			<li ><a href="about.html"><span>Home</span></a></li>
+			<li ><a href="calendar.html"><span>Events</span></a></li>
+		        <li class="current"><a href="volunteer.html"><span>Volunteer</span></a></li>
+		        <li ><a href="archive.html"><span>Archive</span></a></li>
+			<li><a href="reach.html"><span>Contact</span></a></li>	
+		</ul>
+	
+		
+	</div>
+	<div id="content">
+		<div id="about">
+			<h2><center>VOLUNTEER FORM</center></h2><br>
+		   	<form action="MAILTO:puneet.gkaur@gmail.com" method="post" enctype="text/plain">
+		   	Name: <br><input type="text" name="name"><br><br>
+		   	College: <br><input type="text" name="college"><br><br>
+		   	Phone No:<br><input type="text" name="phoneNo"><br><br>
+		   	Email:<br> <input type="text" name="email"><br><br>
+		   	Why would you like to volunteer ?<br>
+		   	<textarea rows="6" cols="80"></textarea><br><br>
+		   	How did you get to know about SPIC MACAY ?<br>
+			<input type="radio" name="know" value="Website">Website<br>
+			<input type="radio" name="know" value="Newspaper">Nespaper<br>
+			<input type="radio" name="know" value="Poster">Poster<br>
+			<input type="radio" name="know" value="Friend">Friend<br>
+			<input type="radio" name="know" value="Other">Other<input type="text" name="other><br><br><br>
+			<input type="submit" value="Submit">
+			</form> 
+			
+			
+            <br><br>
+			
+			</div>
+			
+	</div>
+	<div id="connect">
+				
+					  <img src="images/fb.png"> &nbsp; <img src="images/twitter.png"> &nbsp; <img src="images/blogger.png"> 
+
+				</div>
+		
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+	#font1
+	{
+	        font-family: 'Tangerine', serif;
+       		 font-size: 80px;
+       		 
+	}
+	#Heading1
+	{
+		padding-left:35%;
+		padding-top:3%;
+	}
+	</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+           
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+ 
+                    var url = $(this).attr("href");
+                    
+                    window.open(url);
+ 
+                    event.preventDefault();
+ 
+                });
+            });
+        </script>
+    <script type="text/javascript" src="s3Slider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 8000
+        });
+    });
+    </script>
+	
+	<style type="text/css">
+    #slider 
+	{
+    width: 550px; /* important to be same as image width */
+    height: 400px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+    }	
+    #sliderContent {
+    width: 550px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+	list-style-type: none;
+	color: 	#888888 ;
+    }
+    .sliderImage {
+    float: left;
+    position: relative;
+	display:none;
+	margin:0;
+    }
+    .sliderImage span {
+    width:350px;
+	position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding:3px;
+    width: 100%;
+    background-color: #ffffff;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: #fff;
+    display: none;
+    
+    }  
+    .clear {
+	clear: both;
+    }
+    .sliderImage span strong{
+	width:550px;
+    font-size: 16px;
+    color: 	#990033;
+    }
+    .top {
+	top:20px;
+	left:20px;
+    }
+    .bottom {
+	bottom: 5px;
+    left: 20px;
+    }
+		#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-left:80%;
+		padding-top:1px;
+
+	}
+	
+	</style>
+</head>
+<body>
+        <div id="Heading1">
+               <span id="font1">
+              
+	        Spic Macay
+	        
+	        </span>
+	        </div>
+	<div id="header">
+	        
+		<ul>
+			
+			<li ><a href="about.html"><span>Home</span></a></li>
+			<li class="current"><a href="calendar.html"><span>Events</span></a></li>
+		        <li ><a href="volunteer.html"><span>Volunteer</span></a></li>
+		        <li ><a href="archive.html"><span>Archive</span></a></li>
+			<li><a href="reach.html"><span>Contact</span></a></li>	
+		</ul>
+		<div id="slider">
+            <ul id="sliderContent">
+				
+			    <li class="sliderImage">
+                   <a href=""><img src="imagesspicmacaywebsite/pallavi1.jpg" width="550px" height="400px"alt="1" /></a>
+                   <span class="top"><strong>Marvellous Bharatnatyam Performance<br>Artist : Smt. Pallavi Bhattacharya<br>Venue : IIT Delhi Auditorium <br><tab>Hauz Khaz,New Delhi - 110016<br>Date : 10 January, 2013<br>Timing : 5pm-7pm </strong></span>
+                </li>
+                <li class="sliderImage">
+                   <a href=""><img src="imagesspicmacaywebsite/kkk.jpg" width = "550px " height= "400px"alt="2" /></a>
+                   <span class="top"><strong>Thrilling Puppetry Theatre<br>Venue : IGIT Auditorium <br><tab>Kashmere Gate,New Delhi - 110006<br>Date : 13 January, 2013<br>Timing : 3pm-5pm </strong></span>
+                </li>
+				<li class="sliderImage">
+                    <img src="imagesspicmacaywebsite/pic4.jpg" alt="5" height="400px" width="550px"/>
+                    <span class="top"><strong>Mesmerizing Flute Recital<br>by Pt. Hari Prasad Chaurasia<br>AMITY International<br>Date : 30 January, 2013<br>Timing : 4pm-6pm</strong></span>
+                </li>
+            <div class="clear sliderImage"></div>
+            </ul>
+            </div>
+		
+	</div>
+	<div id="content">
+		<div id="about">
+            
+			<table cellspacing="0" cellpadding="0" border="1px"style="width: 100%; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px;">
+            <tbody>
+                <tr >
+                    <td colspan="7" style="text-align: center; width: 14%; padding: 10px;"><span style="font-weight: bold;">January 2013</span></td>
+                </tr>
+        
+                <tr>
+                    <td style="text-align: center; width: 14%;padding: 10px;">Monday</td>
+        
+                    <td style="width: 15%; text-align: center; padding: 10px;">Tuesday</td>
+        
+                    <td style="width: 14%; text-align: center; padding: 10px;">Wednesday</td>
+        
+                    <td style="width: 14%; text-align: center; padding: 10px;">Thursday</td>
+        
+                    <td style="width: 14%; text-align: center; padding: 10px;">Friday</td>
+        
+                    <td style="width: 14%; text-align: center; padding: 10px;">Saturday</td>
+        
+                    <td style="width: 14%; text-align: center; padding: 10px;">Sunday</td>
+                </tr>
+        
+                <tr class="even">
+                    <td style="width: 14%; padding: 10px;"><br /></td>
+        
+                    <td style="width: 15%; padding: 10px;"><br /></td>
+        
+                    <td style="width: 14%; padding: 10px;"><br /></td>
+        
+                    <td style="width: 14%; padding: 10px;">1</td>
+        
+                    <td style="width: 14%; padding: 10px;">2</td>
+        
+                    <td style="width: 14%; padding: 10px;">3</td>
+        
+                    <td style="width: 14%; padding: 10px;">4</td>
+                </tr>
+        
+                <tr>
+                    <td style="width: 14%; padding: 10px;">5  </td>
+        
+                    <td style="width: 15%; padding: 10px;">6</td>
+        
+                    <td style="width: 14%; padding: 10px;">7</td>
+        
+                    <td style="width: 14%; padding: 10px;">8</td>
+        
+                    <td style="width: 14%; padding: 10px;">9</td>
+        
+                    <td style="width: 14%; padding: 10px; background:#CC0066"><font color="#fff"><strong>10 <br>Bharatnatyam Performance</strong></font></td>
+        
+                    <td style="width: 14%; padding: 10px;">11</td>
+                </tr>
+        
+                <tr>
+                    <td style="width: 14%; padding: 10px;">12</td>
+        		
+                    <td style="width: 14%; padding: 10px; background:#CC0066"><font color="#fff"><strong>13 <br>Puppetry Theatre</strong></font></td>
+        
+                    <td style="width: 14%; padding: 10px;">14</td>
+        
+                    <td style="width: 14%; padding: 10px;">15</td>
+        
+                    <td style="width: 14%; padding: 10px;">16</td>
+        
+                    <td style="width: 14%; padding: 10px;">17</td>
+        
+                    <td style="width: 14%; padding: 10px;">18</td>
+                </tr>
+        
+                <tr>
+                    <td style="width: 14%; padding: 10px;">19</td>
+        
+                    <td style="width: 15%; padding: 10px;">20</td>
+        
+                    <td style="width: 14%; padding: 10px;">21</td>
+        
+                    <td style="width: 14%; padding: 10px;">22</td>
+        
+                    <td style="width: 14%; padding: 10px;">23</td>
+        
+                    <td style="width: 14%; padding: 10px;">24</td>
+        
+                    <td style="width: 14%; padding: 10px;">25</td>
+                </tr>
+        
+                <tr class="even">
+                    <td style="width: 14%; padding: 10px;">26</td>
+        
+                    <td style="width: 15%; padding: 10px;">27</td>
+        
+                    <td style="width: 14%; padding: 10px;">28</td>
+        
+                    <td style="width: 14%; padding: 10px;">29</td>
+        
+                    <td style="width: 14%; padding: 10px; background:#CC0066"><font color="#fff"><strong>30 <br>Flute Recital</strong></font></td>
+        
+                    <td style="width: 14%; padding: 10px;"><br /></td>
+        
+                    <td style="width: 14%; padding: 10px;"><br /></td>
+                </tr>
+            </tbody>
+        </table>
+			</div>
+			
+	</div>
+	<br >
+	<br><br>
+	<div id="connect">
+				
+					  <img src="images/fb.png"> &nbsp; <img src="images/twitter.png"> &nbsp; <img src="images/blogger.png"> 
+
+				</div>
+		
+
+</body>
+</html>

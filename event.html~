@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+           
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+ 
+                    var url = $(this).attr("href");
+                    
+                    window.open(url);
+ 
+                    event.preventDefault();
+ 
+                });
+            });
+        </script>
+        
+    <script type="text/javascript" src="s3Slider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+    </script>
+	
+	<style type="text/css">
+    #slider 
+	{
+    width: 600px; /* important to be same as image width */
+    height: 450px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+    }	
+    #sliderContent {
+    width: 600px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+	list-style-type: none;
+	color:#000000;
+    }
+    .sliderImage {
+    float: left;
+    position: relative;
+	display:none;
+	margin:0;
+    }
+    .sliderImage span {
+    width:450px;
+	position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding:0;
+    width: 100%;
+    background-color: #ffffff;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: #fff;
+    display: none;
+    
+    }  
+    .clear {
+	clear: both;
+    }
+    .sliderImage span strong{
+	width:450px;
+    font-size: 16px;
+    color:#000000;
+    }
+    .top {
+	top:20px;
+	left:20px;
+    }
+    .bottom {
+	bottom: 5px;
+    left: 20px;
+    }
+		#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-left:80%;
+		padding-top:1px;
+
+	}
+	
+	</style>
+	<style type="text/css">
+<!--
+body, html {margin:0; padding:0; background-color:#fff;	height:100%;}
+#swf_content {height:100%; width:100%;}
+-->
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<script type="text/javascript">
+/* CONFIGURATION ---------------------------------------------------- */
+/* set the gallery mode - values: "online" or "offline". Important: to test the gallery localy set gallery_mode to "offline". */
+gallery_mode = "online";
+/* Fancy horizontal animation on browser resize - values: "on" or "off" */
+browser_resize_animation = "on"; 
+/* The directory of the image files (important: keep trailing slashes) */
+images_directory = "images1/"; //Thumbnails size: 240x150 pixels
+/* The total number of galleries */
+total_number_of_galleries = 6; 
+/* Galleries list 
+   Format: "gallery_1", "gallery_2", "gallery_3" etc. for your xml files  
+   Format: "gallery_title_1", "gallery_title_2", "gallery_title_3" etc. for the gallery title */
+gallery_1 = "xml/animals_birds.xml"; 
+	gallery_title_1 = "Animals and birds"; 
+gallery_2 = "xml/landscapes.xml"; 
+	gallery_title_2 = "Landscapes"; 
+gallery_3 = "xml/computers.xml"; 
+	gallery_title_3 = "Computers"; 
+gallery_4 = "xml/cars.xml"; 
+	gallery_title_4 = "Cars"; 
+gallery_5 = "xml/28-weeks-later.xml"; 
+	gallery_title_5 = "28 weeks later movie"; 
+gallery_6 = "xml/abstract.xml"; 
+	gallery_title_6 = "Abstract"; 
+/* End of galleries list */
+/* Galleries title text */
+title_text = "GALLERIES";
+/* Footer text (you can use some simple html tags like anchors, break lines etc.) */
+footer_text = "FluidGrid Gallery by malihu - Flash gallery for the masses <br />web: <a href='http://manos.malihu.gr'>http://manos.malihu.gr</a> | e-mail: <a href='mailto:manos@malihu.gr'>manos@malihu.gr</a>";
+/* Gallery styling */
+/* COLORS - format: 0x000000 (e.g. 0xffffff for white, 0xff0000 for red etc.) */
+page_background_color = "0x000000"; //for transparent flash background, set page_background_color value to: "transparent" (change to "transparent" the wmode parameter as well!)
+scrollbar_color = "0x666666";
+menu_title_color = "0xffcc00";
+menu_background_color = "0x333333";
+menu_text_color = "0xffffff";
+menu_selected_color = "0x545454";
+thumbnail_background_color = "0x333333";
+image_background_color = "0x333333";
+thumbnail_border = "no"; //Change the borders of the thumbnails - values: "yes", "no" or "0-100" number which indicates opacity (e.g. "50" for 50% opacity of borders)
+thumbnail_border_color = "0xffffff";
+thumbnail_title_color = "0x000000";
+thumbnail_hover_color = "0xffcc00";
+image_preloader_color = "0x000000";
+tooltip_background_color = "0xffcc00";
+tooltip_text_color = "0x000000";
+exit_button_background_color = "0x000000";
+exit_button_x_color = "0xffffff";
+footer_text_color = "0x999999";
+footer_background_color = "0x333333";
+/* END OF CONFIGURATION - Do not edit below this line ------------------------------------------- */
+function SetGalleries(){
+theGalleries = "";
+theGalleriesTitles = "";
+	for( i=1; i<=total_number_of_galleries; i++) {
+		theGallery=eval("gallery_"+i);
+		theGalleries += "&gallery_"+i+"="+theGallery;
+		theGalleriesTitle=eval("gallery_title_"+i);
+		theGalleriesTitles += "&gallery_title_"+i+"="+theGalleriesTitle;
+	}
+}
+SetGalleries();
+var flashvars = { 
+	gallery_mode: gallery_mode, 
+	resize_animation: browser_resize_animation, 
+	images_directory: images_directory, 
+	total_galleries: total_number_of_galleries, 
+	page_background_color: page_background_color, 
+	scrollbar_color: scrollbar_color, 
+	menu_title_color: menu_title_color, 
+	menu_background_color: menu_background_color, 
+	menu_text_color: menu_text_color, 
+	menu_selected_color: menu_selected_color, 
+	thumbnail_background_color: thumbnail_background_color, 
+	image_background_color: image_background_color, 
+	thumbnail_border: thumbnail_border, 
+	thumbnail_border_color: thumbnail_border_color, 
+	thumbnail_title_color: thumbnail_title_color, 
+	thumbnail_hover_color: thumbnail_hover_color, 
+	image_preloader_color: image_preloader_color, 
+	tooltip_background_color: tooltip_background_color, 
+	tooltip_text_color: tooltip_text_color, 
+	exit_button_background_color: exit_button_background_color, 
+	exit_button_x_color: exit_button_x_color, 
+	footer_text_color: footer_text_color, 
+	footer_background_color: footer_background_color, 
+	title_text: title_text, 
+	footer_text: unescape(footer_text)
+};
+var params = {
+  allowFullScreen: "true", 
+  wmode: "window", 
+  menu: "false", 
+  flashvars: theGalleries+theGalleriesTitles
+};
+var attributes = {
+  id: "fluidgrid_gallery",
+  name: "fluidgrid_gallery"
+};
+
+swfobject.embedSWF("fluidgrid_gallery.swf", "swf_content", "100%", "100%", "10.0.0", "expressInstall.swf", flashvars, params, attributes);
+</script>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			
+			<li ><a href="about.html"><span>About</span></a></li>
+			<li class="current"><a href="event.html" ><span>Events</span></a></li>
+		        <li ><a href="membership.html"><span>Volunteer</span></a></li>
+			<li><a href="reach.html"><span>Contact</span></a></li>	
+		</ul>
+		<div>
+			<div class="section">
+				<a href="index.html"><img src="images/logo.gif" alt="Logo" /></a>
+				<div>
+                    <big>SPIC MACAY</big><BR><SMALL>Explore the mysticism in your rich cultural tapestry</SMALL>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="swf_content">
+	<!-- the alternative html content to display if flash is not available -->
+	<h1>FluidGrid Gallery</h1>
+	<p>Flash gallery for the masses</p>
+    <!-- end of alternative html content -->
+</div>
+	</div>
+	<div id="connect">
+				
+					  <img src="images/fb.png"> &nbsp; <img src="images/twitter.png"> &nbsp; <img src="images/blogger.png"> 
+
+				</div>
+		
+
+</body>
+</html>

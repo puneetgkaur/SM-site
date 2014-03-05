@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+           
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+ 
+                    var url = $(this).attr("href");
+                    
+                    window.open(url);
+ 
+                    event.preventDefault();
+ 
+                });
+            });
+        </script>
+		<style type="text/css">
+	#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-bottom:2px;
+	padding-left:900px;
+	padding-top:8px;
+	}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<ul>
+			<li><a href="index.html"><span>Home</span></a></li>
+			<li ><a href="about.html"><span>About</span></a></li>
+			<li><a href="event.html" ><span>Events</span></a></li>
+		        <li class="current" ><a href="membership.html"><span>Volunteer</span></a></li>
+			<li><a href="reach.html"><span>Contact</span></a></li>	
+		</ul>
+		<div>
+			<div class="section">
+				<a href=""><img src="images/logo.gif" alt="Logo" /></a>
+				<div>
+                    <big><font color="#990066">SPIC MACAY</font></big><BR><SMALL><font color="#DF0174">Explore the mysticism in your rich cultural tapestry</font></SMALL>		
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div>
+			<br><h2>Here comes a new world awaiting you</h2>
+			<center>
+			<br>Yes sure, we welcome people who are interested to take forward the cause of standing by their rich cultural roots.<br><h4>So why to wait  ? Come and be a part !! </h4>
+
+			</center>
+		</div>
+            			<br><center><a href="mailto:spicmacay.igit@gmail.com?Subject=Register Me" class="myButton">Volunteer</a></center>		
+	</div>
+	<br><br>
+	<div id="connect">
+									  <img src="images/fb.png"> &nbsp; <img src="images/twitter.png"> &nbsp; <img src="images/blogger.png"> 
+
+
+				</div>
+
+</body>
+</html>

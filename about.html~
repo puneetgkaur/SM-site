@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Spic Macay</title>
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+	#font1
+	{
+	        font-family: 'Tangerine', serif;
+       		 font-size: 80px;
+       		 
+	}
+	#Heading1
+	{
+		padding-left:35%;
+		padding-top:3%;
+	}
+	</style>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+           
+            $(document).ready(function(){
+                $('.newWindow').click(function (event){
+ 
+                    var url = $(this).attr("href");
+                    
+                    window.open(url);
+ 
+                    event.preventDefault();
+ 
+                });
+            });
+        </script>
+    <script type="text/javascript" src="s3Slider.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#slider').s3Slider({
+            timeOut: 4000
+        });
+    });
+    </script>
+	
+	<style type="text/css">
+    #slider 
+	{
+    width: 600px; /* important to be same as image width */
+    height: 450px; /* important to be same as image height */
+    position: relative; /* important */
+	overflow: hidden; /* important */
+    }	
+    #sliderContent {
+    width: 600px; /* important to be same as image width or wider */
+    position: absolute;
+	top: 0;
+	margin-left: 0;
+	list-style-type: none;
+	color:#000000;
+    }
+    .sliderImage {
+    float: left;
+    position: relative;
+	display:none;
+	margin:0;
+    }
+    .sliderImage span {
+    width:450px;
+	position: absolute;
+	font: 10px/15px Arial, Helvetica, sans-serif;
+    padding:0;
+    width: 100%;
+    background-color: #ffffff;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+    opacity: 0.8;
+    color: #fff;
+    display: none;
+    
+    }  
+    .clear {
+	clear: both;
+    }
+    .sliderImage span strong{
+	width:450px;
+    font-size: 16px;
+    color:#000000;
+    }
+    .top {
+	top:20px;
+	left:20px;
+    }
+    .bottom {
+	bottom: 5px;
+    left: 20px;
+    }
+		#connect{
+	position:fixed;
+	bottom:0px;
+	background-color:#FFD6FF;
+	opacity:0.6;
+	width:100%;
+	padding-left:80%;
+		padding-top:1px;
+
+	}
+	
+	</style>
+</head>
+<body>
+        <div id="Heading1">
+               <span id="font1">	        Spic Macay       </span>
+	        </div>
+	<div id="header">
+	        
+		<ul>
+			
+			<li class="current"><a href="about.html"><span>Home</span></a></li>
+			<li ><a href="calendar.html"><span>Events</span></a></li>
+		        <li ><a href="volunteer.html"><span>Volunteer</span></a></li>
+		        <li ><a href="archive.html"><span>Archive</span></a></li>
+			<li><a href="reach.html"><span>Contact</span></a></li>	
+		</ul>
+	
+		
+	</div>
+	<div id="content">
+		<div id="about">
+            <h2><center>ABOUT US</center></h2>
+			<span class="first">The Origin</span>
+            <p>Established by Dr. Kiran Seth in 1977 at IIT Delhi, SPIC MACAY is a non-governmental, non-profit and voluntary movement. The Society aims at having every child experience the inspiration and mysticism embodied in Indian and world heritage. With hundreds of chapters in cities all over India and abroad, SPIC MACAY conducts concerts of classical music, dance and folk arts, theatre, screening of classic films, heritage walks to monuments of historical and cultural significance, talks by eminent persons etc. in educational institutions in two series VIRASAT and FEST, every year.</p>
+			<br><br>
+			<span class="first">The Movement</span>
+            <p>SPIC MACAY is an affirmation of a priceless cultural heritage rooted in what is essentially Indian.The movement incorporates the vitality of the youngsters to cajole them into being custodian of what is actually their birthright, namely their heritage, roots and identity.Thus Its work is educational in spirit and character and locates itself in educational institutions only.It is the statement of the effectiveness of voluntary work in inculcating a spirit of service. This is, in fact, the hidden agenda of this movement.</p>			
+            <br><br>
+			
+			</div>
+			
+	</div>
+	<div id="connect">
+				
+					  <img src="images/fb.png"> &nbsp; <img src="images/twitter.png"> &nbsp; <img src="images/blogger.png"> 
+
+				</div>
+		
+
+</body>
+</html>
